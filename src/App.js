@@ -5,7 +5,7 @@ export default function App() {
   const [sec , setSec] = useState(0)
   const [min , setMin] = useState(0)
   const [hr , setHr] = useState(0)
-  const [saveTime , setSaveTime] = useState({})
+  // const [saveTime , setSaveTime] = useState({})
   const [isActive , setIsActive] = useState(true)
 
   function startTimer(){
@@ -46,8 +46,8 @@ const myinterval = setTimeout(()=>{
 
   return (
     <div className="main">
-       <marquee class="marq" direction = "left" loop="" >
-        <div class="geek1">ASHAR.... A DREAMER....</div>
+       <marquee className="marq" direction = "left" loop="" >
+        <div className="geek1">ASHAR.... A DREAMER....</div>
     </marquee>
       <div>
       <span className="timer">{hr} : </span> 
@@ -56,7 +56,7 @@ const myinterval = setTimeout(()=>{
       </div>
    
       <div className="btnWrap">
-      <button className="btn" onClick={handlePause}>{isActive ? "Pause" : "Resume" }</button>
+      <button className={isActive ? "btn" : "btnTogg"} onClick={handlePause}>{isActive ? "Pause" : "Resume" }</button>
       <button  className="btn" onClick={handleReset}>Reset</button>
      </div>
     </div>

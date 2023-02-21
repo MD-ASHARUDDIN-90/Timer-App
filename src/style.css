@@ -35,6 +35,17 @@ p {
   background-color: rgb(8, 0, 255);
   color: white;
 }
+.btn:active{
+  background-color: rgb(255, 0, 0);
+}
+.btnTogg{
+  width: 24%;
+  height: 8vh;
+  
+  border-radius: 30px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
 .marq{
   display: flex;
   flex-direction: column;
